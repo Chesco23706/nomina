@@ -8,3 +8,5 @@ __pycache__/
 recibos/
 data/
 nomina-app/backend/database/*.db
+
+.vercel
