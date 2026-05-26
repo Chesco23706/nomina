@@ -1,0 +1,10 @@
+.vercel/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.idea/
+recibos/
+data/
+nomina-app/backend/database/*.db

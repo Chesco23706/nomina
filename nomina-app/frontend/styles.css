@@ -1,0 +1,182 @@
+:root {
+    --ink: #172033;
+    --muted: #677289;
+    --surface: #ffffff;
+    --line: #dfe6ef;
+}
+
+body {
+    background: #f4f7fb;
+    color: var(--ink);
+    min-height: 100vh;
+}
+
+.login-view {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background:
+        linear-gradient(120deg, rgba(13, 110, 253, 0.16), rgba(25, 135, 84, 0.14)),
+        url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.login-panel {
+    width: min(100%, 420px);
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 18px;
+    padding: 32px;
+}
+
+.brand-mark,
+.nav-logo {
+    display: inline-grid;
+    place-items: center;
+    background: linear-gradient(135deg, #0d6efd, #198754);
+    color: #fff;
+}
+
+.brand-mark {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 30px;
+}
+
+.nav-logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+}
+
+.app-navbar {
+    background: #172033;
+}
+
+.hero-band {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.eyebrow {
+    color: #0d6efd;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.metric-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px;
+}
+
+.metric-icon {
+    width: 46px;
+    height: 46px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 14px;
+    font-size: 22px;
+}
+
+.metric-label {
+    display: block;
+    color: var(--muted);
+    font-size: 0.84rem;
+}
+
+.metric-card strong {
+    display: block;
+    font-size: 1.35rem;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.actions-group {
+    display: flex;
+    gap: 0.35rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.payroll-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.receipt-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.receipt-line:last-child {
+    border-bottom: 0;
+}
+
+.receipt-summary {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.chart-wrap {
+    height: 310px;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-band {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .login-panel {
+        padding: 24px;
+    }
+}
